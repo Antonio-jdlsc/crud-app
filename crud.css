@@ -1,0 +1,351 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header__navigation{
+    position: relative;
+    top:0; 
+    left:0;
+    right:0;
+    background:#3d0b60;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 3rem;
+    color:whitesmoke;
+    font-weight: bolder;
+}
+
+.navbar__items{
+    display: flex;
+    list-style: none;
+}
+.navbar__link{
+    font-size: 1.6rem;
+    padding:0 1.5rem;
+    color:whitesmoke;
+}
+
+.navbar__link:hover{
+    color:#c7e0f4;
+    font-size: 1.9rem;
+    text-decoration: underline;
+}
+
+.fa-bars{
+    font-size: 2.5rem;
+    color:white;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/*-----------------------------------------*/
+
+.body{
+    width: 90vh;
+    height: 90vh;
+}
+
+.crud-container{
+    width: 700px;
+    height: 220px;
+    margin: 80px auto;
+    border: 2px solid black;
+    border-radius: 8px;
+
+}
+
+.crud-title{
+    text-align: center;
+    margin-top: .7em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3d0b60;
+    text-decoration: underline;
+}
+
+.formulario-crud{
+    display: grid;
+    gap: .7em;
+    margin: 1.5em .7em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 1.15em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario-crud div{
+    display: flex;
+    gap: 10px;
+}
+
+.formulario-crud div input{
+    padding-left: 10px;
+    font-size: 1em;
+}
+
+
+.crud-container button{
+    width: 85%;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    font-weight: bolder;
+    border-radius: 8px;
+    border: none;    
+}
+
+.input-section__submit-btn{
+    background-color: #3d0b60;
+    color: white;
+}
+
+.input-section__submit-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;    
+    font-size: 1em;    
+}
+.input-section__reset-btn{
+    background-color: red;
+    color: white;
+}
+
+.input-section__reset-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;    
+    font-size: 1em;    
+}
+
+
+/*----------------------------------------------------*/
+
+
+.member-section{
+    width: 1200px;
+    margin-bottom: 50px;
+} 
+.member-titles{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 35px;
+    margin-left: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.member-container{
+    width: 1200px;   
+}
+
+.member-container tr{
+    display: grid;
+    width: 95%;
+    margin-left: 90px;
+    margin-top: 30px;
+    grid-template-columns: repeat(6, 1fr);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    color: black;
+    font-weight: bold;
+}
+
+.member-container tr button{
+    width: 85%;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    font-weight: bolder;
+    border-radius: 8px;
+    border: none;  
+}
+
+.member-button__delete{
+    background-color: red;
+    color: white;
+}
+
+.member-button__delete:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;    
+    font-size: 1em;    
+}
+
+.member-button__edit{
+    background-color: #3d0b60;
+    color: white;
+}
+
+.member-button__edit:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;    
+    font-size: 1em;   
+}
+/*----------------------------------------------------*/
+
+.edit-container{
+    width: 700px;
+    height: 220px;
+    margin: 80px auto;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.edit-title{
+    text-align: center;
+    margin-top: .7em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3d0b60;
+    text-decoration: underline;
+}
+
+.main-edit{
+    display: grid;
+    gap: .7em;
+    margin: 1.5em .7em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 1.15em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.main-edit div{
+    display: flex;
+    gap: 10px;
+}
+
+.main-edit div input{
+    padding-left: 10px;
+    font-size: 1em;
+}
+
+.edit-container button{
+    width: 85%;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    font-weight: bolder;
+    border-radius: 8px;
+    border: none;    
+}
+
+.input-edit__submit-btn{
+    background-color: #3d0b60;
+    color: white;
+}
+
+.input-edit__submit-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;    
+    font-size: 1em;    
+}
+.input-edit__reset-btn{
+    background-color: red;
+    color: white;
+}
+
+.input-edit__reset-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;    
+    font-size: 1em;    
+}
+
+/*-------------------------------------------*/
+
+
+
+.footer{
+    padding-top: 10rem;
+}
+
+.footer__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.footer__box{
+    flex:1 1 25rem;
+}
+
+.footer__box h3{
+    color:black;
+    font-size: 1.5rem;
+    padding:1rem 0;
+}
+
+.footer__box a{
+    display: block;
+    color:black;
+    font-size: 1rem;
+    padding:1rem 0;
+}
+
+.footer__box a:hover{
+    color:#c7e0f4;
+    text-decoration: underline;
+}
+
+
+
+
+/* media queries  */
+@media (max-width:991px){
+    
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .fa-bars{
+        display: block;
+    }
+
+    .navbar{
+        position:absolute;
+        top:100%; 
+        left:0; 
+        right:0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+
+}
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+
+}

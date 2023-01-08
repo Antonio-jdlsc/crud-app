@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./crud.css">
+    <title>CRUD App</title>
+</head>
+<body>
+
+    <header>
+        <div class="header__navigation">
+    
+            <a href="#" class="fas fa-bars"></a>
+            <a href="#" class="logo">CRUD.</a>
+        
+            <nav class="navbar">
+                <ul class="navbar__items">
+                  <li><a class="navbar__link" href="#">Inicio</a></li>
+                  <li><a class="navbar__link" href="#">Sobre nosotros</a></li>
+                  <li><a class="navbar__link" href="#">Contacto</a></li>
+                </ul>
+              </nav>
+            
+        </div>
+    
+    
+    </header>
+    
+    <section class="crud-container">
+        <h2 class="crud-title">Añadir nuevo miembro</h2>
+        <form class="formulario-crud">
+            <div class="input-section__name">
+                <label for="name" class="input-section__name-label">Nombre</label>
+                <input id="name" type="text" class="input-section__name-input" required>
+            </div>
+
+            <div class="input-section__puesto">
+                <label for="puesto" class="input-section__puesto-label">Puesto</label>
+                <input id="puesto" type="text" class="input-section__puesto-input" required>
+            </div>
+
+            <div class="input-section__estatus">
+                <label for="estatus" class="input-section__estatus-label">Estatus</label>
+                <input id="estatus" type="text" class="input-section__estatus-input" required>
+            </div>
+
+            <div class="input-section__permiso">
+                <label for="permiso" class="input-section__permiso-label">Permiso</label>
+                <input id="permiso" type="text" class="input-section__permiso-input" required>
+            </div>
+
+            <button class="input-section__submit-btn">Añadir</button>
+            <button class="input-section__reset-btn" type="reset">Limpiar</button>
+
+        </form>
+
+    </section>
+
+
+
+
+    <section class="member-section">
+        <div class="member-titles">
+            <h3 class="member-title">Nombre</h3>
+            <h3 class="member-title">Puesto</h3>
+            <h3 class="member-title">Estatus</h3>
+            <h3 class="member-title">Permiso</h3>
+
+        </div>
+        <div class="member-container">
+            
+        </div>
+    </section>
+
+    <section class="edit-container">
+        
+        <h2 class="edit-title">Editar información</h2>
+
+        <div class="main-edit">
+            <div class="input-edit__name">
+                <label for="name-edit" class="input-edit__name-label">Nombre</label>
+                <input id="name-edit" type="text" class="input-edit__name-input">
+            </div>
+
+            <div class="input-edit__puesto">
+                <label for="puesto-edit" class="input-edit__puesto-label">Puesto</label>
+                <input id="puesto-edit" type="text" class="input-edit__puesto-input">
+            </div>
+
+            <div class="input-edit__estatus">
+                <label for="estatus-edit" class="input-edit__estatus-label">Estatus</label>
+                <input id="estatus-edit" type="text" class="input-edit__estatus-input">
+            </div>
+
+            <div class="input-edit__permiso">
+                <label for="permiso-edit" class="input-edit__permiso-label">Permiso</label>
+                <input id="permiso-edit" type="text" class="input-edit__permiso-input">
+            </div>
+
+            <button type="submit" class="input-edit__submit-btn">Actualizar</button>
+            <button class="input-edit__reset-btn" type="reset">Limpiar</button>
+        </div>
+
+    </section>
+
+    <!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="footer__container">
+
+        <div class="footer__box">
+            <h3>CRUD.</h3>
+            <a href="#">Inicio</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Contacto</a>
+        </div>
+
+
+        <div class="footer__box">
+            <h3>Donde encontrarnos</h3>
+            <a href="#">México</a>
+            <a href="#">USA</a>
+        </div>
+    </div>
+</section>
+
+<!-- footer section ends -->  
+
+
+    <script src="./crud.js"></script>
+</body>
+</html>
