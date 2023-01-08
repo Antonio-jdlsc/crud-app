@@ -115,6 +115,9 @@ function editMember(id){
         console.log(JSON.stringify(members));
         renderMember();
         console.log(JSON.stringify(editedMember));
+        editedMember = [];
+        id = null;
+        console.log(editedMember);
 
 
 
