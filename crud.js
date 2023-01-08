@@ -4,7 +4,7 @@ const memberList = document.querySelector('.member-container');
 const crudForm = document.querySelector('.formulario-crud');
 let members = [];
 let itemId = null;
-
+let prueba;
 
 const updateBtn = document.querySelector('.input-edit__submit-btn')
 let editName = document.querySelector('.input-edit__name-input');
