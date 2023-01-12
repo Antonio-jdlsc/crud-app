@@ -3,7 +3,7 @@ const submitBtn = document.querySelector('.input-section__submit-btn');
 const memberList = document.querySelector('.member-container');
 const crudForm = document.querySelector('.formulario-crud');
 let members = [];
-let itemId = null;
+let index = '';
 
 
 const updateBtn = document.querySelector('.input-edit__submit-btn')
@@ -27,6 +27,7 @@ function eventListener (){
         renderMember();
     })
 }
+
 
 
 /* Functions  */
@@ -84,22 +85,13 @@ function renderMember(){
 function editMember(id){
     console.log(id);
 
-    itemId = id;
+    index = members.findIndex(element => element.id == id);
+    console.log(index);
 
-    members.forEach(member =>{
-        
-        if(member.id === itemId){
-
-            const {nombre, puesto, estatus, permiso} = member;
-
-            editName.placeholder = nombre;
-            editRol.placeholder = puesto;
-            editAccess.placeholder = permiso;
-            editStatus.placeholder = estatus;
-
-            console.log(itemId + ':' + member.id);
-        } 
-     });
+    console.log(members);
+    console.log(id);
+    } 
+    
 
      
     // Updating the HTML
@@ -111,18 +103,11 @@ function editMember(id){
             permiso : document.querySelector('.input-edit__permiso-input').value,
             id : Date.now()
         }        
-        members = [...members,editedMember].slice(1);
-        console.log(JSON.stringify(members));
+        members.splice(index, 1, editedMember);
         renderMember();
-        console.log(JSON.stringify(editedMember));
-        editedMember = [];
-        id = null;
-        console.log(editedMember);
-
-
 
     });
-}
+
 
 // Delete member 
 function deleteMember(id){
