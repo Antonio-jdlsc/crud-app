@@ -94,19 +94,19 @@ function editMember(id){
     
 
      
-    // Updating the HTML
-    updateBtn.addEventListener('click', () =>{
-        let editedMember = {
-            nombre : document.querySelector('.input-edit__name-input').value,
-            puesto : document.querySelector('.input-edit__puesto-input').value,
-            estatus : document.querySelector('.input-edit__estatus-input').value,
-            permiso : document.querySelector('.input-edit__permiso-input').value,
-            id : Date.now()
-        }        
-        members.splice(index, 1, editedMember);
-        renderMember();
+// Updating the HTML
+updateBtn.addEventListener('click', () =>{
+    let editedMember = {
+        nombre : document.querySelector('.input-edit__name-input').value,
+        puesto : document.querySelector('.input-edit__puesto-input').value,
+        estatus : document.querySelector('.input-edit__estatus-input').value,
+        permiso : document.querySelector('.input-edit__permiso-input').value,
+        id : Date.now()
+    }        
+    members.splice(index, 1, editedMember);
+    renderMember();
 
-    });
+});
 
 
 // Delete member 
