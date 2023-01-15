@@ -3,5 +3,6 @@ En este proyecto puse en práctica mis habilidades acerca del uso correcto de DO
 Esta aplicación simula una gestión de miembros / usuarios de una organización 
 
 
-https://github.com/Antonio-jdlsc/crud-app
+https://antonio-jdlsc.github.io/crud.github.io/
+
 
